@@ -1,0 +1,134 @@
+:root {
+  --cinza: #aaa;
+  --vermelha: #872f6d;
+  --vermelha-escura: #be4a4a;
+  --branca: #fff;
+  --luz: #7d0e8357;
+}
+
+body {
+  align-items: center;
+  background: linear-gradient(45deg, #f6d8d2 0%, #a091dc 100%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  text-transform: lowercase;
+}
+
+h1 {
+  color: var(--branca);
+  margin-bottom: 30px;
+  font-size: 2rem;
+  text-transform: lowercase;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.teclado {
+  background: linear-gradient(to bottom, #eeeeee 0%, #cccccc 100%);
+  box-shadow: 0px 0px 0 0px var(--vermelha), 0px 0px 30px #858285;
+  border-radius: 75px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+}
+
+.tecla {
+  background-color: var(--vermelha);
+  border-radius: 60px;
+  color: var(--vermelha);
+  cursor: pointer;
+  height: 120px;
+  font-size: 1.75em;
+  font-weight: bold;
+  width: 120px;
+  transition: 0.5s;
+}
+
+.tecla.focus,
+.tecla:focus {
+  box-shadow: 0px 0px 25px var(--luz);
+  scale: 1.05;
+}
+
+.tecla_ts,
+.tecla_fearless,
+.tecla_speaknow,
+.tecla_red,
+.tecla_1989,
+.tecla_reputation,
+.tecla_lover,
+.tecla_folklore,
+.tecla_evermore,
+.tecla_midnights {
+  background-position: center;
+  background-size: cover;
+  transition: 0.5s;
+}
+
+.tecla_ts {
+  background-image: url("/albuns/taylorswift.jpg");
+}
+
+.tecla_fearless {
+  background-image: url("/albuns/fearless.jpg");
+}
+
+.tecla_speaknow {
+  background-image: url("/albuns/speaknow.jpg");
+}
+
+.tecla_red {
+  background-image: url("/albuns/red.jpg");
+}
+
+.tecla_1989 {
+  background-image: url("/albuns/1989.jpg");
+}
+
+.tecla_reputation {
+  background-image: url("/albuns/reputation.jpg");
+}
+
+.tecla_lover {
+  background-image: url("/albuns/lover.png");
+}
+
+.tecla_folklore {
+  background-image: url("/albuns/folklre.png");
+}
+
+.tecla_evermore {
+  background-image: url("/albuns/evermore.png");
+}
+
+.tecla_midnights {
+  background-image: url("/albuns/midnights.jpg");
+}
+
+@media (max-width: 500px) {
+  h1 {
+    text-align: center;
+  }
+
+  #tela {
+    transform: scale(0.75);
+  }
+}
+
+.tecla_ts:hover,
+.tecla_fearless:hover,
+.tecla_speaknow:hover,
+.tecla_red:hover,
+.tecla_1989:hover,
+.tecla_reputation:hover,
+.tecla_lover:hover,
+.tecla_folklore:hover,
+.tecla_evermore:hover,
+.tecla_midnights:hover {
+  opacity: 0.9;
+}
