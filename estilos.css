@@ -2,7 +2,7 @@
   --cinza: #aaa;
   --vermelha: #872f6d;
   --vermelha-escura: #be4a4a;
-  --branca: #fff;
+  --branca: #fff4fa;
   --luz: #7d0e8357;
 }
 
@@ -15,9 +15,11 @@ body {
   font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
   text-transform: lowercase;
+  color: var(--branca);
 }
 
 h1 {
+  margin-top: 20px;
   color: var(--branca);
   margin-bottom: 30px;
   font-size: 2rem;
@@ -130,5 +132,14 @@ h1 {
 .tecla_folklore:hover,
 .tecla_evermore:hover,
 .tecla_midnights:hover {
-  opacity: 0.9;
+  opacity: 0.8;
+}
+
+.icon{
+  width: 25px;
+  margin: 5px;
+}
+
+footer{
+  padding-top: 15px;
 }
