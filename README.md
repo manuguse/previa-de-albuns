@@ -2,4 +2,4 @@
  
  > Criado com HTML, CSS e JavaScript, inspirado no curso de JS da Alura.
 
-<a target_blank href="https://previa-de-albuns.vercel.app/">visualizar resultado</a>
+<a target="_blank" href="https://previa-de-albuns.vercel.app/">visualizar resultado</a>
